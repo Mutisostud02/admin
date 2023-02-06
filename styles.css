@@ -1,0 +1,114 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+html{
+    resize: both;
+    overflow: auto;
+}
+
+#search{
+    border-radius:5px;
+}
+.area{
+    height: 100%;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 0.5fr 5fr;
+    gap:5px;
+
+}
+.header{
+    background-color: rgb(204, 202, 202);
+    grid-column: 2/-1;
+    grid-row:1/2
+}
+.nav{
+    background-color: aqua;
+ position: relative;
+    height: 100%;
+    grid-row:1/-1;
+    display: grid;
+    grid-template-rows:50px repeat(9,40px);
+    gap: 10px;
+   
+    justify-content: center;
+}
+
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 10px;
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
+.bot-header{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 10px;
+    margin-top:10px;
+    
+}
+main{
+    background-color: rgb(247, 247, 247);
+    grid-column:2/-1;
+    display: grid;
+    grid-template-columns:3fr 1fr ;
+    position: relative;
+    padding-top:30px ;
+    gap:5px;
+    
+    
+}
+main h3{
+    position:absolute;
+}
+main .announce{
+    right:120px;
+}
+.myProjects{
+    padding:4px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 50px;
+    
+}
+.news{
+    padding:4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    
+}
+
+article{
+    height: 250px;
+    background-color: white;
+    display: grid;
+    box-shadow: 1px 1px 4px rgb(58, 58, 58);
+    align-items: center;
+    justify-content: center;
+    border-left:10px solid yellow;
+    
+    
+    
+}
+article p{
+    padding-left: 10px;
+}
+.news p{
+    height: 125px;
+    background-color: white;
+    display: grid;
+    box-shadow: 1px 1px 4px rgb(58, 58, 58);
+    align-items: center;
+    justify-content: center;
+    
+}
